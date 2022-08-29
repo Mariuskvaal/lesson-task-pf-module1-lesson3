@@ -13,10 +13,12 @@ if (firstNumber < secondNumber) {
 var age = 11;
 var minimumAge = "13";
 
-if (age >= minimumAge) {
+var minimumAgeConvert = parseFloat (minimumAge);
+
+if (age >= minimumAgeConvert) {
     console.log("Your age meets the requirements")
 } else {
-    console.log("Your age does not meet the minimum age requirments")
+    console.log("Your age does NOT meet the minimum age requirments")
 }
 
 //Question 3
@@ -41,7 +43,7 @@ if (convertingStringToNumbers < convertingStringToNumbers2) {
 
 var colour = "blue";
 
-if (colour = "orange") {
+if (colour !== "orange") {
     console.log("This colour is a bit rubbish");
 }
 
@@ -57,8 +59,54 @@ if (invoicePaid === false) {
 //Question 6
 //
 
-var selectedNumber = 11;
+var selectedNumber = 13;
 var winningNumber = "15";
+
+var winningNumberConvert = parseFloat(winningNumber);
+
+if (selectedNumber !== winningNumberConvert) {
+    console.log("you lose again");
+} 
+else{ 
+    console.log("you win");
+}
+
+//Question 7
+//
+var dayOfTheWeek = 2;
+var todaysDay;
+
+switch(dayOfTheWeek) {
+
+    case 1:
+        todaysDay = "Monday";
+        break;
+    case 2:
+        todaysDay = "Thuesday";
+        break;
+    case 3:
+        todaysDay = "Wendsday";
+        break;
+    case 4:
+        todaysDay = "Thuesday";
+        break;
+    case 5:
+        todaysDay = "Friday";
+        break;
+    case 6:
+        todaysDay = "Saturday";
+        break;
+    case 7:
+        todaysDay = "Sunday";
+        break;    
+
+    default: 
+        todaysDay = "invalid day number";
+
+}
+
+console.log(todaysDay);
+
 
 
 
